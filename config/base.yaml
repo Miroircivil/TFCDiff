@@ -15,7 +15,7 @@ train:
   lr: 1.0e-3
 
 diffusion:
-  beta_start: 1e-4
+  beta_start: 0.0001
   beta_end: 0.5
   num_steps: 50
   schedule: "quad"

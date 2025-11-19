@@ -51,7 +51,7 @@ if __name__ == "__main__":
         ).to(device)
         
         model = DDPM(base_model, config, 'cuda:0')
-        output_path = "./model.pth"
+        output_path = "./check_points/model.pth"
         
         model.load_state_dict(torch.load(output_path, weights_only=False))
         
@@ -109,9 +109,9 @@ if __name__ == "__main__":
 
                 # Visualization            
                 plt.figure(figsize=(10, 4))
-                plt.plot(clean_numpy[1, :, 0], label='Clean ECG', color='blue')
+                plt.plot(clean_numpy[1, :, 0], label='Clean ECG', color='green')
                 plt.plot(noisy_numpy[1, :, 0], label='Noisy ECG', color='red')
-                plt.plot(out_numpy[1, :, 0], label='Denoised ECG', color='green')
+                plt.plot(out_numpy[1, :, 0], label='Denoised ECG', color='blue')
                 plt.title(f'ECG Signals - Batch {batch_no}, Sample 1')
                 plt.xlabel('Time')
                 plt.ylabel('Amplitude')
