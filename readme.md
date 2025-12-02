@@ -1,5 +1,5 @@
 # TFCDiff
-This repository provides the implementation of TFCDiff: Robust ECG Denoising via Time-Frequency Complementary Diffusion.
+This repository provides the implementation of [TFCDiff: Robust ECG Denoising via Time-Frequency Complementary Diffusion](https://arxiv.org/abs/2511.16627v1).
 
 `Abstract`
 Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physical activities, including baseline wander (BW), muscle artifact (MA), and electrode motion artifact (EM). Developing a method to remove such complex noise and reconstruct high-fidelity signals is clinically valuable for diagnostic accuracy. However, denoising of multi-beat ECG segments remains understudied and poses technical challenges. To address this, we propose Time-Frequency Complementary Diffusion (TFCDiff), a novel approach that operates in the Discrete Cosine Transform (DCT) domain and uses the DCT coefficients of noisy signals as conditioning input. To refine waveform details, we incorporate Temporal Feature Enhancement Mechanism (TFEM) to reinforce temporal representations and preserve key physiological information. Comparative experiments on a synthesized dataset demonstrate that TFCDiff achieves state-of-the-art performance across five evaluation metrics. Furthermore, TFCDiff shows superior generalization on the unseen SimEMG Database, outperforming all benchmark models. Notably, TFCDiff processes raw 10-second sequences and maintains robustness under flexible random mixed noise (fRMN), enabling plug-and-play deployment in wearable ECG monitors for high-motion scenarios.
@@ -83,3 +83,4 @@ This table presents the overall comparison results of different methods for ECG 
 Visualization of the denoising results on the SimEMG Database.
 
 ![image6](./images/SimEMG.png)
+
