@@ -115,9 +115,9 @@ def Data_Preparation(noise_version=1):
                 'sel16795',
 
                 'sele0106',  # Record from European ST-T Database
-                'sele0121',
+                # 'sele0121',
 
-                'sel32',  # Record from ``sudden death'' patients from BIH
+                # 'sel32',  # Record from ``sudden death'' patients from BIH
                 'sel49',
 
                 'sel14046',  # Record from MIT-BIH Long-Term ECG Database
@@ -191,3 +191,4 @@ def Data_Preparation(noise_version=1):
 #debug
 
 #[a, b, c, d] = Data_Preparation(1)
+
