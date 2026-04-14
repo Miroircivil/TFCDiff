@@ -1,0 +1,20 @@
+# Folders to ignore
+/__pycache__/*
+/TBoard_Graph/*
+/.idea/*
+/run*/*
+deepFilter/__pycache__/*
+utils/__pycache__/*
+/data/*
+
+# Files to ignore
+*.pyc
+*.png
+*.npy
+*.hdf5
+*.pkl
+*.gz
+*.mat
+*.zip
+tes*
+.directory
