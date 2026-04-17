@@ -32,7 +32,6 @@ Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physic
     | exp 5 | ✓ | ✓ | ✓ | ✓ |
     | exp 6 | ✓ | ✓ | × | ✓ |
     | exp 7 | ✓ | ✓ | × | × |
-    | exp 8 | ✓ | ✓ | ✓ | × |
 
 4. **Comparative Methods Codes**
 

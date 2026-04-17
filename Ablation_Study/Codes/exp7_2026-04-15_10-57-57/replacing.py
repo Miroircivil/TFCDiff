@@ -12,7 +12,7 @@ files_to_replace = [
 ]
 
 # 源目录
-source_dir = './backup/exp5_2026-04-11_16-38-58'
+source_dir = './backup/2026-04-14_13-41-28'
 
 # 遍历需要替换的文件
 for file_path in files_to_replace:
