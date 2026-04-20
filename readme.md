@@ -104,7 +104,7 @@ This table presents the overall comparison results of different methods for ECG 
 
 Visualization of the denoising results on the synthesized dataset.
 
-![image4](./images/Synthesized.png)
+![image4](./images/Figure_1.png)
 
 This table presents the overall comparison results of different methods for ECG denoising on the SimEMG Database.
 
