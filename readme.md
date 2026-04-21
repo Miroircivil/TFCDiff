@@ -11,7 +11,10 @@ Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physic
   <img src="./images/Architecture.png" width="80%">
 </div>
 
-## Updates 4/24/2024
+## Updates 4/21/2026
+**Updated Noise Reduction Results with Corrected Dataset Splitting**
+
+## Updates 4/14/2026
 1. **Correction of Dataset Splitting Errors**
 
     A bug in the list within `data_preparation.py` previously caused two ECG records that should have been assigned to the test set to be incorrectly placed in the training set. This issue has now been fixed. Consequently, the number of training samples has been adjusted from 37,590 to 32,578, and the number of testing samples has increased from 4,296 to 5,012.
@@ -102,7 +105,12 @@ This table presents the overall comparison results of different methods for ECG 
 
 ![image3](./images/Intradataset.png)
 
-Visualization of the denoising results on the synthesized dataset.
+Visualization of denoising results on the synthesized dataset. The columns correspond to increasing noise levels with the following quantitative metrics:
+
+- **Col. 1** (Noise Level 0.2–0.6): SSD 2.156, MAD 0.138, PRD 15.162, CosSim 0.989, ImSNR 15.204
+- **Col. 2** (Noise Level 0.6–1.0): SSD 5.200, MAD 0.150, PRD 24.140, CosSim 0.979, ImSNR 16.266
+- **Col. 3** (Noise Level 1.0–1.5): SSD 16.416, MAD 0.333, PRD 53.270, CosSim 0.945, ImSNR 14.866
+- **Col. 4** (Noise Level 1.5–2.0): SSD 12.989, MAD 0.289, PRD 42.170, CosSim 0.944, ImSNR 13.442
 
 ![image4](./images/Figure_1.png)
 
@@ -110,8 +118,11 @@ This table presents the overall comparison results of different methods for ECG 
 
 ![image5](./images/Interdataset.png)
 
-Visualization of the denoising results on the SimEMG Database.
+Visualization of the denoising results on the SimEMG Database(Col. 1:). The columns correspond to increasing noise levels with the following quantitative metrics:
 
-![image6](./images/SimEMG.png)
+- **Col. 1** (Input SNR 2.560): SSD 2.644, MAD 0.175, PRD 19.258, CosSim 0.987, ImSNR 10.681
+- **Col. 2** (Input SNR -0.130): SSD 1.684, MAD 0.137, PRD 22.995, CosSim 0.975, ImSNR 12.208
+
+![image6](./images/Figure_2.png)
 
 
