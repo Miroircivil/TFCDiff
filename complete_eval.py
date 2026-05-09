@@ -54,6 +54,15 @@ if __name__ == "__main__":
         output_path = "./check_points/model.pth"
         
         model.load_state_dict(torch.load(output_path, weights_only=False))
+        model.eval()
+        model.model = torch.compile(
+           model.model,  # 假设 DDPM 类中存储基础模型的属性名叫 .model 或 .unet，请根据实际代码确认
+           mode="reduce-overhead", # 推荐模式：减少启动开销，适合迭代多次的扩散模型
+           dynamic=False,          # 固定输入形状时设为 False 更稳定
+        )
+        # warm-up
+        warmup = torch.randn(32, 1, 3600).to(device)
+        output = model.denoising(warmup)
         
         # due to the stochasticity of the synthesized dataset, 
         # we suggest saving the dataset in advance for better reproducibility
