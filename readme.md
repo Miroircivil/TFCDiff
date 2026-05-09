@@ -11,6 +11,12 @@ Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physic
   <img src="./images/Architecture.png" width="80%">
 </div>
 
+## Updates 5/9/2026
+1. **Visualization Codes**
+2. **Employing JIT Compilation**
+
+   We employed just-in-time (JIT) compilation via torch.compile to accelerate model inference.
+
 ## Updates 4/21/2026
 **Updated Noise Reduction Results with Corrected Dataset Splitting**
 
