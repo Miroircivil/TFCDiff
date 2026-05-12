@@ -61,7 +61,7 @@ if __name__ == "__main__":
            dynamic=False,          # 固定输入形状时设为 False 更稳定
         )
         # warm-up
-        warmup = torch.randn(32, 1, 3600).to(device)
+        warmup = torch.randn(32, 1, 1000).to(device)
         output = model.denoising(warmup)
         
         # due to the stochasticity of the synthesized dataset, 
