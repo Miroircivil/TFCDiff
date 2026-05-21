@@ -151,8 +151,5 @@ if __name__ == "__main__":
     # with open('./test_results_IIR_nv1.pkl', 'rb') as f:
     #     data_list = pickle.load(f)
     # signal = data_list[2][:800]
-    # 运行分析 (请将 fake_signal 和 fake_ann 替换为您的 signal 和 ann)
-    # 注意：由于 fake_signal 是随机噪声，NK2 的结果可能与伪造的 GT 差异巨大，这是正常的。
-    # 关键在于代码流程是否跑通。
     res = run_analysis(signal, gt, sampling_rate=SAMPLING_RATE)
     print("分析完成。")
