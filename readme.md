@@ -11,6 +11,22 @@ Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physic
   <img src="./images/Architecture.png" width="80%">
 </div>
 
+## Updates 5/28/2026
+1. **Visualization of TFCDiff denoised results on AF and PVC signals**
+<div align="center">
+  <img src="./images/Figure_1.png" width="80%">
+</div>
+<div align="center">
+  <img src="./images/Figure4.png" width="80%">
+</div>
+
+2. **Visual comparison of denoising results between different methods**
+<div align="center">
+  <img src="./images/Figure_5.png" width="80%">
+</div>
+
+3. **Visualization Codes for spectrogram / time-frequency analysis**
+
 ## Updates 5/9/2026
 1. **Visualization Codes**
 2. **Employing JIT Compilation**
@@ -118,7 +134,7 @@ Visualization of denoising results on the synthesized dataset. The columns corre
 - **Col. 3** (Noise Level 1.0–1.5): SSD 16.416, MAD 0.333, PRD 53.270, CosSim 0.945, ImSNR 14.866
 - **Col. 4** (Noise Level 1.5–2.0): SSD 12.989, MAD 0.289, PRD 42.170, CosSim 0.944, ImSNR 13.442
 
-![image4](./images/Figure_1.png)
+![image4](./images/Figure3.png)
 
 This table presents the overall comparison results of different methods for ECG denoising on the SimEMG Database.
 
