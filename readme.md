@@ -14,7 +14,7 @@ Ambulatory electrocardiogram (ECG) readings are prone to mixed noise from physic
 ## Updates 8/9/2026
 **Updating supplementary material to the latest version**
 
-  We have included paired t-test results comparing the ECG denoising performance of different methods.
+We have included: 1) paired t-test results comparing the ECG denoising performance of different methods; 2) deriviations regarding the noise level and the SNR scaling.
 
 ## Updates 5/28/2026
 1. **Visualization of TFCDiff denoised results on AF and PVC signals**
